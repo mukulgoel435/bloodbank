@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style3.css">
+      <link rel="stylesheet" href="organized.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <title>Home page</title>
+  </head>
+  <body>
+  <div class="background-home">
+    <img class="home5" src="images/contact.avif" alt="">
+
+
+<!-- nav bar  -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="loginpage.html"> <button type="button" class="btn2" name="button">Login</button></a>
+<a href="signuppage.html"><button type="button" class="btn3" name="button">Sign up</button></a>
+<div class="topnav" id="myTopnav">
+  <a class="po" href="home.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="#contact">Contact</a>
+  <a class="po" href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+</div>
+
+
+  <div class="background">
+    <form class="container" id="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+      
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+
+              <div class="app-contact">CONTACT INFO : +91 xxxxxxxxxx</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input id="name" class="app-form-control" placeholder="NAME" >
+                </div>
+                <div class="app-form-group">
+                  <input id="email" class="app-form-control" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input id="contact" class="app-form-control" max="10"  placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input id="msg" class="app-form-control" placeholder="MESSAGE">
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button id="send" type="submit" class="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="credits">
+
+          <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+
+
+
+                <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+              </g>
+            </svg>
+
+          </a>
+        </div>
+        </div>
+        </div>
+
+        </form>
+
+
+
+
+
+
+
+</div>
+</div>
+<hr class="hr">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+          import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+          import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+          import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyB6iIwAmPC01Wk-eWyIc8wr7Tv3xa_yZD4",
+    authDomain: "blood-bank-f3ae1.firebaseapp.com",
+    databaseURL: "https://blood-bank-f3ae1-default-rtdb.firebaseio.com",
+    projectId: "blood-bank-f3ae1",
+    storageBucket: "blood-bank-f3ae1.appspot.com",
+    messagingSenderId: "608972566323",
+    appId: "1:608972566323:web:8d5843024ca1cf6187d846",
+    measurementId: "G-S6L3Q0745G"
+          };
+
+          // Initialize Firebase
+          // const app = initializeApp(firebaseConfig);
+          // const analytics = getAnalytics(app);
+          // const auth = getAuth();
+  //         const db = getFirestore(app);
+  // // Initialize Cloud Firestore and get a reference to the service
+
+
+      firebase.initializeApp(firebaseConfig);
+      var contactformDB = firebase.database().ref("contactform");
+      document.getElementById("contactform").addEventListener("submit", submitForm);
+
+      function submitForm(e){
+        e.preventDefault();
+
+        var name = getElementVal("name");
+        var email = getElementById("email");
+        var contact = getElementById("contact");
+        var message = getElementById("msg");
+
+        saveMessages(name, email,contact,message);
+      }
+
+      const saveMessages = (name, email,contact,message) => {
+        var newContactForm = contactformDB.push();
+
+        new newContactForm.set({
+          name: name,
+          emailid: email,
+          contact_no: contact,
+          message : message
+        });
+      }
+
+
+        </script>
+  </body>
+</html>

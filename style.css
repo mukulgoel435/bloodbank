@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/blood.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.h{
+  color: blue;
+}
+.form-box{
+  height: 550px;
+  width: 550px;
+  background: #F1959B;
+
+  /* background-color: #EDBB99; */
+  margin-left: 90px;;
+  margin-top: 5px;
+  border-radius: 20px;
+  -webkit-box-shadow:  2px 2px 26px 4px #000000;
+  box-shadow:  2px 2px 26px 4px #000000;
+  font-size: 15px;
+
+}
+.login-title{
+  text-align: center;
+  padding: 20px;
+  padding-top: 31px;
+  font-weight: 700;
+  font-size: 3rem;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.pass{
+  width: 80%;
+}
+
+.cssinput{
+  padding: 0px;
+  font-size: 21px;
+  /* border-width: 1px; */
+  border-color: transparent;
+  background-color: transparent;
+  /* color: #000000; */
+  border-bottom: 1px solid black;
+  width: 100%;
+  /* border-radius: 15px; */
+  /* box-shadow: 0px 0px 9px rgba(66,66,66,.58); */
+  /* text-shadow: 0px 0px 0px rgba(66,66,66,.75); */
+}
+
+.check{
+  /* padding-top: 50px;
+  padding-bottom: 20px; */
+  width: 80%;
+}
+
+.btn {
+  background: #fcfcfc;
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #ffffff);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #ffffff);
+  background-image: -ms-linear-gradient(top, #fcfcfc, #ffffff);
+  background-image: -o-linear-gradient(top, #fcfcfc, #ffffff);
+  background-image: linear-gradient(to bottom, #fcfcfc, #ffffff);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: black;
+color: white;
+  text-decoration: none;
+}
+
+.button{
+  /* padding-top: 90px; */
+
+
+}
+input{
+  border-bottom: #000000;
+  font-size: 10px;
+}
+.login-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.form-class{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+
+}
+.radio-inline{
+  font-size: 18px;
+  color: grey;
+    padding: 5px 5px;
+
+}
+
+.sign{
+  text-decoration: none;
+  color: black;
+}
+
+.newpage{
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+ align-content: center;
+}
+
+/* Doctor portal */
